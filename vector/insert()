@@ -1,0 +1,26 @@
+@@@
+first syntax:
+insert(position,value)
+e.g.
+vector<int> vec;
+vec.insert(vec.begin(), 3); //insert 3 at the begining
+vec.insert(vec.begin(), 4); //insert 4 at the begining
+output: 4 3
+
+
+second syntax:
+insert(position,size,value)
+e.g.
+vec.insert(vec.begin(),1, 3);  //insert 3 at the begining i.e. 0  index for once
+vec.insert(vec.begin(),2, 4);  //insert 4 at the begining i.e. 0  index for twice
+output: 4 4 1
+
+
+third syntax:
+insert(position,itr1,itr2)
+e.g.
+vector<int> vec1={10,20,30};
+vector<int> vec;
+vec.insert(vec.begin(),vec1.begin(),vec1.end());
+output: 10 20 30
+@@@
